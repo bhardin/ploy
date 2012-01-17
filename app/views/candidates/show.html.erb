@@ -1,0 +1,16 @@
+<% title "Candidate" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @candidate.name %>
+</p>
+
+<p>
+  <strong>Github:</strong>
+  <%= @candidate.github_name %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_candidate_path(@candidate) %> |
+  <%= link_to "View All", candidates_path %>
+</p>

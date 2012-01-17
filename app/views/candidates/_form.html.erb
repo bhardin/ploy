@@ -1,0 +1,12 @@
+<%= form_for @candidate do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :github_name %><br />
+    <%= f.text_field :github_name %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

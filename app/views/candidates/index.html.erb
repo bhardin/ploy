@@ -1,0 +1,16 @@
+<% title "Candidates" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+  <% for candidate in @candidates %>
+    <tr>
+      <td><%= candidate.name %></td>
+      <td><%= link_to "Show", candidate %></td>
+      <td><%= link_to "Edit", edit_candidate_path(candidate) %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Candidate", new_candidate_path %></p>
