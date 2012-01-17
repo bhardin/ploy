@@ -10,13 +10,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120117000604) do
+ActiveRecord::Schema.define(:version => 20120117003709) do
 
   create_table "candidates", :force => true do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "github_name"
+    t.string   "linked_in"
+    t.text     "notes"
   end
 
 end
