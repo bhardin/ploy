@@ -3,6 +3,9 @@
 Ploy is a Rails application that I created to help with tracking potential
 emPLOYees.
 
+== Rails
+This has been tested with Rails 3.0.7
+
 == Getting Started
 
 1. Clone Repo
