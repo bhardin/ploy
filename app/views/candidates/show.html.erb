@@ -1,22 +1,28 @@
 <% title "Candidate" %>
 
 <p>
-  <strong>Name:</strong>
-  <%= @candidate.name %>
+  <strong>
+    <%= @candidate.name %>
+  </strong>
 </p>
+
+<%= image_tag avatar_url(@candidate) %>
 
 <p>
   <strong>Links</strong>
-  <ul>
-    <li>
-      <%= link_to "Github", "http://www.github.com/" + @candidate.github_name %>
-    </li>
-    <li>
-      <%= link_to "LinkedIn" + @candidate.linked_in %>
-    </li>
-  </ul>
+<ul>
+  <li>
+    <%= link_to "Github", "http://www.github.com/" + @candidate.github_name %>
+  </li>
+  <li>
+    <%= link_to "LinkedIn" + @candidate.linked_in %>
+  </li>
+</ul>
+</p>
 
-
+<p>
+  <strong>Email</strong>
+  <%= @candidate.email %>
 </p>
 
 <p>
